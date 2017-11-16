@@ -3,6 +3,9 @@ namespace Application;
 
 use Zend\ServiceManager\Factory\InvokableFactory;
 
+/**
+ * Return config for Application Module
+ */
 return [
     'controllers' => [
         'factories' => [

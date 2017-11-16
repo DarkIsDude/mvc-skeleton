@@ -11,6 +11,9 @@ class Module implements ConfigProviderInterface, AutoloaderProviderInterface
 {
     /**
      * Return the config for this module
+     *
+     * @see ConfigProviderInterface
+     * @return \Traversable
      */
     public function getConfig()
     {
@@ -19,6 +22,9 @@ class Module implements ConfigProviderInterface, AutoloaderProviderInterface
 
     /**
      * Return loader
+     *
+     * @see AutoloaderProviderInterface
+     * @return array
      */
     public function getAutoloaderConfig()
     {
