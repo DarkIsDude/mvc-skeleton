@@ -17,6 +17,7 @@ class HelloController extends AbstractActionController
             );
         }
 
-        return 'Hello world';
+        $name = $request->getParam('name');
+        return 'Hello world' . ($name ? ' ' . $name : '');
     }
 }

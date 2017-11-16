@@ -15,7 +15,7 @@ return [
             'routes' => [
                 'hello' => [
                     'options' => [
-                        'route' => 'hello-world',
+                        'route' => 'hello-world [<name>]',
                         'defaults' => [
                             'controller' => Controller\HelloController::class,
                             'action'     => 'index',
